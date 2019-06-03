@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Medical Prediction
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-row>
+      <ion-col>
+          <ion-fab-button (click)="openCam()">
+              <ion-icon name="camera"></ion-icon>
+            </ion-fab-button>
+      </ion-col>
+      <ion-col>
+          <ion-fab-button (click)="onPredict()">
+              <ion-icon name="play"></ion-icon>
+            </ion-fab-button>
+      </ion-col>
+      <ion-col>
+        <ion-fab-button (click)="onPredict()">
+            <ion-icon name="share"></ion-icon>
+          </ion-fab-button>
+    </ion-col>
+    </ion-row>
+  </ion-fab>
+  -->
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button (click)="onPredict()">
+      <ion-icon name="play"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button (click)="openCam()">
+      <ion-icon name="camera"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="loadModel()">
+            <ion-icon name="share"></ion-icon>
+          </ion-fab-button>
+    </ion-fab>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+    <br><br><br><br>
+  <img id="target" src="{{image}}" width="100%">
+  <!-- <img id="target2" src="/assets/bellgadse.jpg"> -->
+
+
+  <!--
+  <img [src]="image" *ngIf="image" width="400px">
+  -->
+</ion-content>
